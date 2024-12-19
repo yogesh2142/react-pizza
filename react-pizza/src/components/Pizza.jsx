@@ -1,7 +1,7 @@
 
 const cardStyle = {
     display: "flex",
-    gap: "1rem",
+    gap: "2rem",
     padding: "1rem",
 };
 
@@ -12,7 +12,7 @@ const imgStyle = {
 const detailStyle = {
     display: "flex",
     flexDirection: "column",
-    gap: "0.5rem",
+    gap: "1rem",
 };
 
 
@@ -23,7 +23,7 @@ function Pizza(props) {
             !soldOut ? cardStyle : { ...cardStyle, filter: "grayscale(1)" }
                 }
         >
-            
+
             <div>
                 <img style={imgStyle} src={`${photoName}`} alt={`${name}`} />
             </div>

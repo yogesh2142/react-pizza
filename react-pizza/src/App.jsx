@@ -1,19 +1,17 @@
 import "./Global.css";
-
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 
 
 const appStyle = {
-    padding: "0 9rem",
-    paddingTop:"4rem",
-    backgroundColor: "#f7f2e9",
     color: "#27272a",
+    backgroundColor: "#f7f2e9",
+    borderBottom: "1rem solid #edc84b"
     
-}
+};
 
-export function App() {
+function App() {
 
     // 1. Header
     // 2. Menu
@@ -22,9 +20,18 @@ export function App() {
 
     return (
         <div style={appStyle}>
+            <div
+                style={{
+                    maxWidth: "70rem",
+                    margin: "0 auto",
+                    paddingTop: "4rem",
+                    
+                }}
+            >
             <Header />
             <Menu />
             <Footer />
+            </div>
         </div>
     );
 }
