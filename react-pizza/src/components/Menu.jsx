@@ -1,15 +1,10 @@
 import Pizza from "./Pizza";
-
-// import focaccia from "./public/pizzas/focaccia.jpg";
-// import funghi from "./pizzas/funghi.jpg";
-// import margherita from "./pizzas/margherita.jpg";
-// import prosciutto from "./pizzas/prosciutto.jpg";
-// import salamino from "./pizzas/salamino.jpg";
-// import spinaci from "./pizzas/spinaci.jpg";
+import data from "../data/data.js";
 
 const menuBoxStyle = {
     display: "grid",
-    gridTemplateColumns:"repeat(2, 1fr)",
+    gridTemplateColumns: "repeat(2, 1fr)",
+    marginTop: "3rem",
 }
 
 const menuHeader = {
@@ -17,15 +12,13 @@ const menuHeader = {
 }
 
 const menuHeaderStyle = {
-    
     textTransform: "uppercase",
-    padding: "1rem 0",
+    padding: "0.6rem",
+    fontWeight: "400",
     borderTop: "2px solid #27272a",
     borderBottom: "2px solid #27272a",
     display: "inline-block",
-    margin: "0 auto",
-    marginBottom: "15px", 
-    fontWeight:"500",
+    marginBottom: "3rem",
 }
 
 const descStyle = {
@@ -44,14 +37,10 @@ function Menu() {
             </div>
             
             <div style={menuBoxStyle}>
-                <Pizza  />
-                <Pizza  />
-                <Pizza  />
-                <Pizza  />
-                <Pizza  />
-                <Pizza  />
+                {data.map(function (pizzaData) {
+                    return <Pizza pizzaData={pizzaData} key={pizzaData.name} />
+                })}
             </div>
-        
         </div>
     );
 }

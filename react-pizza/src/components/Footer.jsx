@@ -2,19 +2,19 @@
 const footerStyle = {
     margin:"2rem",
     textAlign: "center",
-    marginBottom:"8rem",
     
 }
 
 const btnStyle = {
     backgroundColor: "#edc84b",
-    color: "black",
-    fontSize: "14px",
-    padding: "10px 0.6rem",
-    marginTop: "1.3rem",
+    margin: "3rem 0",
+    padding: "1rem 1.5rem",
     border: "none",
-    
-}
+    cursor: "pointer",
+    textTransform: "uppercase",
+    color: "#27272a",
+    letterSpacing: "0.1rem"
+};
 
 function Footer() {
     return <div style={footerStyle}>
