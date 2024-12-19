@@ -1,9 +1,13 @@
+/* eslint-disable no-dupe-keys */
+
 const headingStyle = {
     textAlign: "center",
     textTransform: "uppercase",
     fontWeight: "400",
     paddingBottom: "3rem",
-    color:"#edc84b",
+    color: "#edc84b",
+    fontSize: "50px",
+    fontWeight: "200",
 }
 
 function Header() {

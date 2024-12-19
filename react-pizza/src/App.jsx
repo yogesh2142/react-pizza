@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 
+
 const appStyle = {
     padding: "0 9rem",
     paddingTop:"4rem",
